@@ -31,7 +31,7 @@ This repository contains a Streamlit application that demonstrates dynamic and i
    pip install -r requirements.txt
    ```
 
-3. Obtain a Groq API key by signing up at [Groq](https://www.groq.com/).
+3. Obtain a Groq API key by signing up at [Groq](https://console.groq.com/keys).
 
 ## Usage
 
