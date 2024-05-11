@@ -81,21 +81,8 @@ def consolidate_responses(responses, topic):
     ]
     return get_completion(messages)
 
-def save_summary_to_file(topic, summary):
-    counter = 1
-    filename = f"{topic}_summary.txt"
-    
-    while os.path.exists(filename):
-        filename = f"{topic}_summary_{counter}.txt"
-        counter += 1
-    
-    with open(filename, "w") as file:
-        file.write(summary)
-    
-    st.success(f"Summary saved to {filename}")
-
 # Predefined subject to start with
-predefined_subject = "Climate change and its impact on global biodiversity"
+predefined_subject = "How will AGI change the world?"
 topic = st.text_input("Enter a topic:", value=predefined_subject, key="topic")
 
 if st.button("Analyze Topic"):
@@ -145,6 +132,5 @@ if st.button("Analyze Topic"):
 
             with st.expander("Comprehensive Summary", expanded=True):
                 st.write(consolidated_summary)
-                save_summary_to_file(topic, consolidated_summary)
         else:
             st.error("Failed to analyze the topic with Groq. Please check your API key and network connection.")
