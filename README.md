@@ -2,6 +2,9 @@
 
 This repository contains a Streamlit application that demonstrates dynamic and intelligent multi-agent topic analysis using the Groq API. The application allows users to enter a topic and generates a comprehensive summary by dynamically creating agent roles and assigning tasks based on the topic analysis.
 
+## Demo
+[Try the demo](https://multi-agent-analyzer.streamlit.app/)
+
 ## Features
 
 - Dynamic agent creation based on topic analysis
