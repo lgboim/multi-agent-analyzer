@@ -22,7 +22,7 @@ This repository contains a Streamlit application that demonstrates dynamic and i
 1. Clone the repository:
 
    ```
-   git clone https://github.com/yourusername/multi-agent-topic-analysis.git
+   git clone https://github.com/lgboim/multi-agent-analyzer.git
    ```
 
 2. Install the required dependencies:
