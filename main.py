@@ -9,7 +9,7 @@ st.write("Provide a topic, and watch as the manager dynamically creates roles an
 
 # User input for API key
 api_key = st.text_input("Enter your Groq API key:", type="password")
-
+st.sidebar.markdown("[Get your Groq API key here](https://console.groq.com/keys)")
 # Initialize Groq client
 client = Groq(api_key=api_key)
 
@@ -82,7 +82,7 @@ def consolidate_responses(responses, topic):
     return get_completion(messages)
 
 # Predefined subject to start with
-predefined_subject = "How will AGI change the world?"
+predefined_subject = "What is the future of ai?"
 topic = st.text_input("Enter a topic:", value=predefined_subject, key="topic")
 
 if st.button("Analyze Topic"):
