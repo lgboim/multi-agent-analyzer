@@ -9,7 +9,7 @@ st.write("Provide a topic, and watch as the manager dynamically creates roles an
 
 # User input for API key
 api_key = st.text_input("Enter your Groq API key:", type="password")
-st.sidebar.markdown("[Get your Groq API key here](https://console.groq.com/keys)")
+st.markdown("[Get your Groq API key here](https://console.groq.com/keys)")
 # Initialize Groq client
 client = Groq(api_key=api_key)
 
